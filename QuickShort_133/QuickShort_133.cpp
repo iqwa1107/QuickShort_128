@@ -71,14 +71,15 @@ void q_short(int low, int high)
 		
 
 		// search for an el element less then or equal to pivot
-		while ((arr[i] <= pivot) && (j <= low))           //langkah algoritma no 7
+		while ((arr[j] > pivot) && (j >= low))           //langkah algoritma no 7
 		{
-			i++;                                            //langkah algoritma no 8
+			j--;                                            //langkah algoritma no 8
 			cmp_count++;
 		}
 		cmp_count++;
 
 		// if the greater element is on the left the elemnt 
+		cmp_count++;
 		if (i < j)           //langkah algoritma no 9
 		{
 			//swap the ekemnt at index 1 whit the element at index j
@@ -99,13 +100,13 @@ void q_short(int low, int high)
 	q_short(low, j - 1);       //Langkah Algoritma No 12
 
 	//short the list on the left of pivot using quik short 
-	q_short( j - 1, high);       //Langkah Algoritma No 13
+	q_short( j + 1, high);       //Langkah Algoritma No 13
 
 
 }
 void display() {
 	cout << "\n===========================" << endl;
-	cout << "Shortd Array" << endl;
+	cout << "Sorted Array" << endl;
 	cout << "\n===========================" << endl;
 	for (int i = 0; i < n; i++)
 	{
@@ -122,5 +123,7 @@ int main()
 	q_short(0, n - 1);
 	display();
 	system("pause");
+
+	return 0;
 
 }

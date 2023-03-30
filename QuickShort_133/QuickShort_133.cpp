@@ -96,10 +96,22 @@ void q_short(int low, int high)
 		mov_count++;
 	}
 	//short the list on the left of pivot using quik short 
-	qshort_s(low, j - 1);       //Langkah Algoritma No 12
+	q_short(low, j - 1);       //Langkah Algoritma No 12
 
 	//short the list on the left of pivot using quik short 
-	qshort_s( j - 1 high);       //Langkah Algoritma No 13
+	q_short( j - 1, high);       //Langkah Algoritma No 13
 
 
+}
+void display() {
+	cout << "\n===========================" << endl;
+	cout << "Shortd Array" << endl;
+	cout << "\n===========================" << endl;
+	for (int i = 0; i < n; i++)
+	{
+		cout << arr[i] << " ";
+	}
+
+	cout << "\n\nNumber of comprasion: " << cmp_count << endl;
+	cout << "Number of data movemnt: " << mov_count << endl;
 }

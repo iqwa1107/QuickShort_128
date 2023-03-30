@@ -88,7 +88,13 @@ void q_short(int low, int high)
 		}
 		
 	}   
-	//j now contain
+	//j now contain the indx of the last elemnt in the sorted list 
+	if (low < j)               //Langkah Algoritma No 11
+	{
+		//move the pivot to its correct position in the list
+		swap(low, j);
+		mov_count++;
+	}
 
 
 

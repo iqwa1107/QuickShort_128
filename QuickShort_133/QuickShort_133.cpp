@@ -96,9 +96,10 @@ void q_short(int low, int high)
 		mov_count++;
 	}
 	//short the list on the left of pivot using quik short 
-	qsort_s(low, j - 1);       //Langkah Algoritma No 12
+	qshort_s(low, j - 1);       //Langkah Algoritma No 12
 
-
+	//short the list on the left of pivot using quik short 
+	qshort_s( j - 1 high);       //Langkah Algoritma No 13
 
 
 }

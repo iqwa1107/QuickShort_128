@@ -115,3 +115,12 @@ void display() {
 	cout << "\n\nNumber of comprasion: " << cmp_count << endl;
 	cout << "Number of data movemnt: " << mov_count << endl;
 }
+
+int main()
+{
+	input();
+	q_short(0, n - 1);
+	display();
+	system("pause");
+
+}

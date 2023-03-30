@@ -32,4 +32,4 @@ void input() {
 	}
 }
 
-//swaps 
+//swaps the elemnt st index x with the elemnt at index y

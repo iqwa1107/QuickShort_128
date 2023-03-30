@@ -33,3 +33,19 @@ void input() {
 }
 
 //swaps the elemnt st index x with the elemnt at index y
+void swep(int x, imt y)
+{
+	int temp;
+
+	temp = arry[x];
+	arry[x] = arry[y];
+	arry[y] = temp;
+
+}
+
+void q_short(int low, int high)
+{
+	int pivot, i, j;
+	if (low > high)
+		return;                          // Langkah algoritma No. 1
+}
